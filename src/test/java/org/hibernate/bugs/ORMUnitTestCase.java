@@ -82,7 +82,7 @@ public class ORMUnitTestCase extends BaseCoreFunctionalTestCase {
 
         // The below statement will throw OutOfMemoryException
         List list = query.list();
-        /** The OutOfMemoryException should being thrown, if not, please remember to set `-Xmx256M`
+        /** The OutOfMemoryException should be thrown, if not, please remember to set `-Xmx256M`
         * Only 5 entities should be loaded into memory. However in the {@link  QuerySqmImpl#doList()}
         * at the line 546: final List<R> list = resolveSelectQueryPlan().performList( executionContextToUse ); the all entities are loaded
         **/
